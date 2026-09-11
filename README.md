@@ -177,9 +177,9 @@ Thank You For Using Student Data Organizer Project!
 ```text
 
 │
+├──  README.md
 ├── main.py
-├── output.png
-└── README.md
+└── output.png
 ```
 
 ### 📄 File Description
