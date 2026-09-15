@@ -1,8 +1,6 @@
-
 print("Welcome to the  Student Data Orgnazer ")
 print()
 students = []
-
 while True :
     print()
     print("Select an Opstion ")
@@ -112,19 +110,18 @@ while True :
 
     elif choice == 5 :
         print()
-        if len(students) != 0 :
-            id = int(input("Enter Student ID:-"))
-            for std in students :
-                if std["info"][0] == id :
-                    for sub in std["subject"] :
-                        print(f"Subject = {sub}")
-                    break
-            else:
-                print("Student Not Found.")
-        else :
-            print("Data Not Found ")
 
+        sett = set()
+        for std in students:
+            std_subject = std["subject"]
+            for i in std_subject :
+                sett.add(i)
+        print("all subject ")
+        for subject in sett  :
+            print(subject)
+
+     
+             
     elif choice == 6 :
         print("Thank You For Using Student Data Organizer project ! ")
         break
-
